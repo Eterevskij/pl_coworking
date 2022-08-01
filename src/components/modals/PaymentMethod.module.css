@@ -1,0 +1,118 @@
+.modal {
+    width: 864px !important;
+}
+
+.modal :global(.ant-modal-body) {
+    padding: 48px;
+}
+
+.modal :global(.ant-modal-content) {
+    border-radius: 16px;
+}
+
+.modal .title {
+    font-weight: 600;
+    font-size: 32px;
+    color: #2B2B2B;
+    margin-bottom: 16px;
+}
+
+.modal .subtitle {
+    font-size: 16px;
+    color: #2B2B2B;
+    margin-bottom: 32px;
+}
+
+.list {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.listItem + .listItem {
+    margin-top: 16px;
+}
+
+.listItem {
+    width: 100%;
+    padding: 24px 32px;
+    height: auto;
+    border-radius: 12px !important;
+    border: 1px solid #BCBEC0 !important;
+    box-shadow: none !important;
+}
+
+.listItem__text__title {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.listItem__text__subtitle {
+    color: #4f4f4f;
+    font-size: 16px;
+}
+
+.listItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left__text {
+    margin-left: 24px;
+}
+
+.listItem::before {
+    background: transparent !important;
+}
+
+.listItem:global(.ant-radio-button-wrapper-checked) {
+    border: 1px solid #62CC78 !important;
+}
+
+.listItem__text__subtitle .price {
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.totalPayment {
+    background: #f4f4f4;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.totalPayment__name {   
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+.totalPayment__value {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.payButton {
+    width: 100%;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 18px;
+    height: 56px;
+    border-radius: 8px;
+    background: #4DB663 !important;
+    border: none;
+}
+
+.payButton:disabled {
+    background: #BCBEC0 !important;
+}

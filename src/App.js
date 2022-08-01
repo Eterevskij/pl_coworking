@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import 'antd/dist/antd.css';
+import { } from '@ant-design/icons';
 import './App.css';
+
+import CoworkingPlug from './components/CoworkingPlug';
+import Coworking from './components/Coworking';
+import ChooseSubscibeTerm from './components/modals/ChooseSubscibeTerm';
+import PaymentMethod from './components/modals/PaymentMethod';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <CoworkingPlug /> */}
+      <Coworking />
+      {/* <ChooseSubscibeTerm /> */}
+      {/* <PaymentMethod /> */}
     </div>
   );
 }

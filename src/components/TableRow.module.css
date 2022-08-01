@@ -1,0 +1,348 @@
+.paymentHistory__table__row {
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 12px;
+    align-items: center;
+    padding: 16px 24px;
+    border: 1px solid transparent;
+    transition: 0.3s all;
+}
+
+.paymentHistory__table__row.header .paymentHistory__table__col p {
+    color: #7a7a7a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.paymentHistory__table__row.header .paymentHistory__table__col {
+    padding: 8px 0;
+}
+
+.term {
+    color: #2B2B2B;
+    font-size: 16px;
+}
+
+.tarif {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.taridAndID .id {
+    font-weight: 500;
+    color: #7A7A7A;
+    margin-top: 4px;
+}
+
+.date p {
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+.price {
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+.header .price p {
+    font-size: 14px;
+}
+
+.paymentHistory__table__row:nth-child(2n) {
+    background: #F7F7F7;
+}
+
+.paymentHistory__table__col {
+    display: block;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
+    /* padding: 16px 24px; */
+}
+
+.paymentHistory__table__col.price {
+    display: block;
+    margin-left: 4.16666667%;
+    flex: 0 0 12.50000000%;
+    max-width: 12.50000000%;
+}
+
+
+.status {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.paymentMethod {
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+.paymentHistory__table__col.status .paid {
+    color: #4db663;
+}
+
+.paymentHistory__table__col.status .error {
+    color: #F44F5A;
+}
+
+.paymentHistory__table__col.status .processing {
+    color: #F4B71A;
+}
+
+.paymentHistory__table__col.expandButton {
+    display: none;
+}
+
+.paymentHistory__table__col.mobileDetails {
+    display: none;
+}
+
+@media (max-width: 1280px) {
+
+    .price.desktop {
+        display: none;
+    }
+
+    .paymentMethod.desktop {
+        display: none;
+    }
+
+    .paymentHistory__table__col {
+        display: block;
+        flex: 0 0 20.83333333%;
+        max-width: 20.83333333%;
+    }
+
+    .paymentHistory__table__col.taridAndID {
+        flex: 0 0 33.33333333%;
+        max-width: 33.33333333%;
+    }
+
+    .paymentHistory__table__col.expandButton {
+        display: block;
+        flex: 0 0 4.16666667%;
+        max-width: 4.16666667%;
+    }
+
+    .expandButton button {
+        min-width: 40px;
+        height: 40px;
+        padding: 0;
+        background: transparent !important;
+        border-radius: 8px;
+        border: 1px solid #BCBEC0 !important;
+    }
+
+    .expandButton button.open {
+        background: #2b2b2b !important;
+    }
+
+    .expandButton button svg {
+        margin-top: 5px;
+    }
+
+    .paymentHistory__table__col.mobileDetails {
+        display: block;
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+    }
+
+    .mobileDetails__сollapse {
+        border: none !important;
+        background: transparent !important;
+    }
+
+    .mobileDetails__сollapse :global(.ant-collapse-content-box) {
+        padding: 0;
+    }
+
+    .mobileDetails__сollapse :global(.ant-collapse-header) {
+        display: none !important;
+    }
+
+    .mobileDetails__сollapse :global(.ant-collapse-item) {
+        border: none !important;
+    }
+
+    .mobileDetails__сollapse :global(.ant-collapse-content) {
+        border: none !important;
+        background: transparent !important;
+        margin-top: 16px;
+    }
+
+    .mobileDetails__сollapseWrapper {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -6px;
+        margin-right: -6px;
+        row-gap: 12px;
+    }
+
+    .mobileDetails__сollapseItemWrapper {
+        flex: 0 0 50.00000000%;
+        max-width: 50.00000000%;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .mobileDetails__сollapseItemWrapper.term {
+        display: none;
+    }
+
+    .mobileDetails__сollapseItem {
+        background: #F4F4F4;
+        border-radius: 12px;
+        padding: 8px 16px;
+    }
+
+    .mobileDetails__сollapseItem .name {
+        font-weight: 500;
+        color: #7A7A7A;
+    }
+
+    .mobileDetails__сollapseItem .value {
+        font-size: 16px;
+        color: #2B2B2B;
+    }
+
+    .paymentHistory__table__row.expanded {
+        background: #fff !important;
+        border: 1px solid #2B2B2B;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .paymentHistory__table__col.term {
+        display: none;
+    }
+
+    .paymentHistory__table__col {
+        display: block;
+        flex: 0 0 25.00000000% !important;
+        max-width: 25.00000000% !important;
+    }
+
+    .paymentHistory__table__col.status {
+        margin-left: 16.66666667%;
+    }
+
+    .paymentHistory__table__col.expandButton {
+        display: block;
+        flex: 0 0 8.33333333% !important;
+        max-width: 8.33333333% !important;
+        display: flex;
+        justify-content: end;
+    }
+
+    .paymentHistory__table__col.mobileDetails {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .mobileDetails__сollapseItemWrapper.term {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+    }
+
+    .mobileDetails__сollapseItemWrapper.term {
+        display: block;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        display: none;
+    }
+
+    .paymentHistory__table__row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 12px;
+    }
+
+    .paymentHistory__table__col.taridAndID {
+        order: 2;
+    }
+
+    .paymentHistory__table__col.status {
+        margin-left: 0;
+    }
+
+    .paymentHistory__table__col.status p {
+        text-align: right;
+    }
+
+    .paymentHistory__table__col {
+        flex: 0 0 50% !important;
+        max-width: 50.00000000% !important;
+    }
+
+    .paymentHistory__table__col.mobileDetails {
+        order: 1 !important;
+    }
+
+    .paymentHistory__table__col.mobileDetails {
+        order: 1;
+    }
+
+    .paymentHistory__table__col.expandButton {
+        order: 1;
+    }
+
+    .paymentHistory__table__col.taridAndID {
+        order: 1;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .paymentHistory__table__col.expandButton {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .paymentHistory__table__col.expandButton button {
+        width: 100%;
+    }
+
+    .mobileDetails__сollapseItemWrapper {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .paymentHistory__table__row {
+        padding: 16px 16px 8px;
+    }
+
+    .mobileDetails__сollapse :global(.ant-collapse-content) {
+        margin-top: 0;
+    }
+
+    .paymentHistory__table__col.taridAndID {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .paymentHistory__table__col.date p {
+        font-size: 14px;
+    }
+
+    .paymentHistory__table__col.status p {
+        font-size: 14px;
+    }
+
+    .mobileDetails__сollapseItem {
+        padding: 8px 12px;
+    }
+
+    .mobileDetails__сollapseWrapper {
+        margin-bottom: 16px;
+    }
+
+}

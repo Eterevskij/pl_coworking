@@ -1,0 +1,93 @@
+.backButton {
+    display: flex;
+    align-items: center;
+    padding: 19px 16px !important;
+    border-radius: 6px;
+    border: 1px solid #EDEDED !important;
+    margin-bottom: 24px;
+}
+
+.backButton span {
+    font-weight: 500;
+    color: #2b2b2b;
+}
+
+.backButton svg {
+    margin-right: 8px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    color: #2b2b2b;
+    margin-bottom: 48px;
+}
+
+.descriptionCardWrapper {
+    padding: 40px 48px;
+    background: #fff;
+    border-radius: 16px;
+    margin-bottom: 32px;
+}
+
+.descriptionCard {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.descriptionCardTitle {
+    color: #2b2b2b;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.descriptionCardSubtitle {
+    font-size: 18px;
+    color: #2b2b2b;
+    margin-bottom: 40px;
+}
+
+.descriptionCardButton {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 700;
+    background: #4db663 !important;
+    border-radius: 8px;
+    height: 56px;
+    width: 217px;
+    border: none;
+}
+
+.left {
+    display: block;
+    flex: 0 0 50.00000000%;
+    max-width: 50.00000000%;
+}
+
+.right {
+    display: block;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
+    margin-left: 8.33333333%;
+}
+
+.descriptionCardPhoto {
+    width: 100%;
+}
+
+.tarifCardsBlock {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+    row-gap: 32px;
+}
+
+.tarifCardWrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: block;
+    flex: 0 0 50.00000000%;
+    max-width: 50.00000000%;
+}

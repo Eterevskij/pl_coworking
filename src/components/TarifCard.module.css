@@ -1,0 +1,79 @@
+.tarifCard {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.tarifCardHeader {
+    padding: 24px;
+    background: #f4f4f4;
+    border-radius: 12px;
+    position: relative;
+    height: 122px;
+    margin-bottom: 40px;
+}
+
+.tarifCardPhoto {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tarifCardSubtitle {
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.tarifCardTitle {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.tarifCardListTitle {
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.tarifCardListItem {
+    list-style: none;
+    padding-left: 36px;
+    background-image: url(../icons/ListCheck.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #000;
+    font-size: 18px;
+}
+
+.tarifCardListItem + .tarifCardListItem {
+    margin-top: 12px;
+}
+
+.tarifCardList {
+    margin-bottom: 32px;
+}
+
+.tarifCardPriceWrapper {
+    background: #F4F4F4;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.tarifCardPrice {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.tarifCard.vip .tarifCardHeader {
+    background: linear-gradient(90deg, #4DB663 -3.05%, #6BD681 102.47%);
+}
+
+.tarifCard.vip .tarifCardSubtitle,
+.tarifCard.vip .tarifCardTitle {
+    color: #fff;
+}

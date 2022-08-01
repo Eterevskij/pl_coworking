@@ -1,0 +1,76 @@
+.sortSelect :global(.ant-select-arrow) {
+    display: none;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+}
+
+.sort :global(.ant-select-selector) {
+    padding-left: 35px;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 12px !important;
+}
+
+.sort :global(.ant-select-selector) :global(.ant-select-selection-item) {
+    color: #2b2b2b;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sort :global(.ant-select-arrow) {
+    border: none;
+    background: transparent;
+    box-shadow: none !important;
+    left: 0;
+    position: absolute;
+}
+
+.cardsNumAndSort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.totalAd {
+    font-size: 16px;
+    color: #2b2b2b;
+    white-space: nowrap;
+}
+
+.totalAd .num {
+    font-weight: 600;
+}
+
+.totalAd .num {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+    .sort {
+        justify-content: center;
+        width: 100%;
+        border: 1px solid #BCBEC0;
+        padding: 8px 0;
+        border-radius: 6px;
+    }
+
+    .sortWrapper {
+        width: 100%;
+    }
+
+    .cardsNumAndSort {
+        flex-wrap: wrap-reverse
+    }
+
+    .totalAdWrapper {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+        margin-bottom: 16px;
+    }
+}

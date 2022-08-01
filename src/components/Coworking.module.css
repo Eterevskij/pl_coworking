@@ -1,0 +1,82 @@
+.backButton {
+    display: flex;
+    align-items: center;
+    padding: 19px 16px !important;
+    border-radius: 6px;
+    border: 1px solid #EDEDED !important;
+    margin-bottom: 24px;
+}
+
+.backButton span {
+    font-weight: 500;
+    color: #2b2b2b;
+}
+
+.backButton svg {
+    margin-right: 8px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    color: #2b2b2b;
+    margin-bottom: 48px;
+}
+
+.paymentHistory__title {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cardHeader__wrapper {
+    margin-bottom: 24px;
+}
+
+.paymentHistory__table {
+    padding: 6px 16px 16px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #EDEDED;
+}
+
+.yourTarifCard__wrapper {
+    margin-bottom: 96px;
+}
+
+@media (max-width: 1024px) {
+
+    .title {
+        display: none;
+    }
+
+    .yourTarifCard__wrapper {
+        margin-bottom: 80px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .paymentHistory__title {
+        margin-bottom: 32px;
+    }
+
+    .paymentHistory__table {
+        padding: 24px 16px 16px;
+    }
+
+    .yourTarifCard__wrapper {
+        margin-bottom: 64px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .paymentHistory__table {
+        padding: 16px 12px 12px;
+    }
+
+}

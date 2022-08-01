@@ -1,0 +1,256 @@
+.modal {
+    width: 864px !important;
+}
+
+.modal :global(.ant-modal-body) {
+    padding: 48px;
+}
+
+.modal :global(.ant-modal-content) {
+    border-radius: 16px;
+}
+
+.modal .title {
+    font-weight: 600;
+    font-size: 32px;
+    color: #2B2B2B;
+    margin-bottom: 16px;
+}
+
+.modal .subtitle {
+    font-size: 16px;
+    color: #2B2B2B;
+    margin-bottom: 32px;
+}
+
+.tarifCard {
+    background: #F4F4F4;
+    border-radius: 12px;
+    padding: 48px 40px;
+    height: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tarifCard__top__price {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.tarifCard__bottom__button {
+    width: 100%;
+}
+
+.tarifCard__bottom__button+.tarifCard__bottom__button {
+    margin-top: 16px;
+}
+
+.tarifCard__bottom__button.term {
+    height: 40px;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2b2b2b;
+    border: 1px solid #BCBEC0;
+}
+
+.tarifCard__bottom__button.buy {
+    height: 48px;
+    background: #4DB663;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+}
+
+.tarifCards {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -9px;
+    margin-right: -9px;
+    row-gap: 18px;
+}
+
+.tarifCardsWrapper {
+    display: block;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.tarifCard__top__discount {
+    color: #7a7a7a;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: line-through;
+    text-decoration-color: #7A7A7A;
+}
+
+.tarifCard__top__percent {
+    background: #4DB663;
+    color: #fff;
+    padding: 4px 8px;
+    width: fit-content;
+    border-radius: 6px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 24px;
+    height: 28px;
+}
+
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+
+    .tarifCardsWrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .modal {
+        width: 640px !important;
+    }
+
+    .tarifCard__bottom {
+        flex: 0 0 33.33333333%;
+        max-width: 33.33333333%;
+    }
+
+    .tarifCard__top {
+        flex: 0 0 33.33333333%;
+        max-width: 33.33333333%;
+    }
+
+    .tarifCard {
+        flex-direction: row;
+        height: 160px;
+    }
+
+    .tarifCard__bottom__button.buy {
+        height: 40px;
+    }
+
+    .tarifCard__top__percent {
+        left: 24px;
+    }
+
+    .title {
+        margin-bottom: 12px !important;
+    }
+
+    .subtitle {
+        font-size: 18px !important;
+    }
+
+    .modal :global(.ant-modal-body) {
+        padding: 48px 40px;
+    }
+
+    .tarifCard {
+        padding: 48px 40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .tarifCard__top__percent {
+        position: static;
+        transform: none;
+        margin-top: -14px;
+    }
+
+    .title {
+        font-size: 24px !important;
+    }
+
+    .subtitle {
+        font-size: 16px !important;
+    }
+
+    .modal :global(.ant-modal-body) {
+        padding: 32px 24px;
+    }
+
+    .tarifCard {
+        padding: 32px 24px;
+    }
+
+    .modal {
+        max-width: 100vw;
+        padding-bottom: 0;
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+
+    
+    .modal :global(.ant-modal-content) {
+        border-radius: 16px 16px 0px 0px;
+    }
+
+    .tarifCard__top {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 24px;
+        display: flex;
+    }
+
+    .tarifCard__bottom {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .tarifCard {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 24px 16px;
+    }
+
+    .title {
+        font-size: 18px !important;
+    }
+
+    .subtitle {
+        margin-bottom: 40px !important;
+    }
+
+    .modal :global(.ant-modal-body) {
+        padding: 24px 16px;
+    }
+
+    .tarifCard__top__percent {
+        margin-top: 0;
+    }
+
+    .tarifCard__top__price {
+        order: -1;
+    }
+
+    .tarifCard__top__discount {
+        width: 100%;
+    }
+
+    .tarifCard__top {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .tarifCard__top__price {
+        font-size: 24px;
+    }
+
+}
